@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student feedback form</title>
+    <link rel="stylesheet" href="..\Resources/CSS/Student feedback form.css">
+</head>
+
+<body>
+    <form action="">
+        <h1>Student feedback form</h1>
+        <p>Required Fileds are followed by *
+            <br>
+            &nbsp Please spare some time to fill the following Feedback for Course
+        </p>
+        <h4>Contact Information</h4>
+        <p>Name: * <input type="text" name="name" required></p>
+        <p>Roll Number: * <input type="text" name="Number" required></p>
+        <p>Email: * <input type="email" name="email" id="email" required></p>
+        <label for="Year"><b>Select Year:</b></label>
+        <select name="Year" id="Year">
+            <option value="">--Select a Year--</option>
+            <option value="first year">First Year</option>
+            <option value="second year">Second Year</option>
+            <option value="third year">Third Year</option>
+            <option value="final year">Final Year</option>
+        </select>
+        <label for="Branch"><b>Branch:</b></label>
+        <select name="Branch" id="Branch">
+            <option value="">--Select a Branch--</option>
+            <option value="cse">CSE</option>
+            <option value="cse">Electrical</option>
+            <option value="cse">Mechanical</option>
+            <option value="cse">Civil</option>
+            <option value="cse">IT</option>
+        </select>
+        <p> <b>Section: * </b>
+            A <input type="radio" name="Section" id="a" required>
+            B <input type="radio" name="Section" id="b" required>
+            C <input type="radio" name="Section" id="c" required>
+        </p>
+        <p> <b>Gender: * </b>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+        </p>
+        <fieldset>
+            <legend>Select appropriate answer by clicking the proper option * </legend>
+            <legend>Was the Faculty able to deliver lectures with good communication skills?</legend>
+            <p>
+                Yes <input type="radio" name="cskill" id="yes" required>
+                No <input type="radio" name="cskill" id="no" required>
+            </p>
+            <legend>Whether the Lecture was well Prepared, Organized and Course Material is well defined?</legend>
+            <p>
+                Yes <input type="radio" name="c_skill" id="yes" required>
+                No <input type="radio" name="c_skill" id="no" required>
+            </p>
+            <legend>Were the Faculty delivered the content with emphasis on Fundamental Concepts?</legend>
+            <p>
+                Yes <input type="radio" name="c-skill" id="yes" required>
+                No <input type="radio" name="c-skill" id="no" required>
+            </p>
+            <legend>Was the Audio Visual aids are clear & well organized?</legend>
+            <p>
+                Yes <input type="radio" name="Cskill" id="yes" required>
+                No <input type="radio" name="Cskill" id="no" required>
+            </p>
+            <legend>Whether the difficult topics were taught with adequate attention & ease by Faculty?</legend>
+            <p>
+                Yes <input type="radio" name="C-skill" id="yes" required>
+                No <input type="radio" name="C-skill" id="no" required>
+            </p>
+            <legend>Any additional comments regarding Online Teaching?</legend>
+            <p>
+                Yes <input type="radio" name="C_skill" id="yes" required>
+                No <input type="radio" name="C_skill" id="no" required>
+            </p>
+            <p><textarea name="C_skill" cols="50" rows="2"></textarea></p>
+            <legend>Any Remark/Suggestions/Idea/Queries?</legend>
+            <p>
+                Yes <input type="radio" name="CSkill" id="yes" required>
+                No <input type="radio" name="CSkill" id="no" required>
+            </p>
+            <p><textarea name="CSkill" cols="50" rows="4"></textarea></p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit Your Form">
+    </form>
+</body>
+
+</html>
